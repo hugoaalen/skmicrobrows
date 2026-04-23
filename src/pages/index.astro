@@ -1,11 +1,161 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="SK Microbrows | Mirada y Estética">
+	<header class="header">
+		<nav class="nav">
+			<a href="/" class="logo">SK MICROBROWS</a>
+			<div class="links">
+				<a href="#servicios">Servicios</a>
+				<a href="#sobre-mi">Sobre mí</a>
+				<a href="#faq">FAQ</a>
+				<a href="#contacto" class="btn-cta">Cita</a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero-content">
+				<span class="subtitle">Especialista en Micropigmentación</span>
+				<h1>Realzamos tu esencia natural</h1>
+				<p>Técnicas hiperrealistas diseñadas exclusivamente para tu rostro.</p>
+				<div class="hero-btns">
+					<a href="#servicios" class="btn-primary">Ver tratamientos</a>
+					<a href="#contacto" class="btn-secondary">Dónde estamos</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="servicios" class="container">
+			<h2 class="section-title">Servicios</h2>
+			<div class="services-grid">
+				<div class="service-card">
+					<div class="img-placeholder">👁️</div>
+					<h3>Microblading</h3>
+					<p>Diseño pelo a pelo para cejas con falta de densidad o forma.</p>
+				</div>
+				<div class="service-card">
+					<div class="img-placeholder">✨</div>
+					<h3>Efecto Polvo</h3>
+					<p>Sombreado suave para un aspecto de maquillaje natural y elegante.</p>
+				</div>
+				<div class="service-card">
+					<div class="img-placeholder">🤍</div>
+					<h3>Areola Clínica</h3>
+					<p>Reconstrucción estética y oncológica con acabados 3D.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="sobre-mi" class="about-section">
+			<div class="container about-grid">
+				<div class="about-image">
+					<img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&q=80" alt="Profesional">
+				</div>
+				<div class="about-text">
+					<h2>Pasión por el detalle</h2>
+					<p>Soy [Nombre], especialista titulada en estética avanzada. Mi enfoque no es transformar tu rostro, sino devolverle la armonía que el tiempo o las circunstancias han diluido.</p>
+					<p>Utilizo los mejores pigmentos del mercado y las técnicas más vanguardistas para asegurar que el resultado sea, ante todo, invisible al ojo inexperto.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="faq" class="container">
+			<h2 class="section-title">Preguntas Frecuentes</h2>
+			<div class="faq-list">
+				<details>
+					<summary>¿Cuánto tiempo dura el tratamiento?</summary>
+					<p>Dependiendo de tu tipo de piel, entre 12 y 18 meses. Recomendamos un retoque anual para mantener el color perfecto.</p>
+				</details>
+				<details>
+					<summary>¿Es un proceso doloroso?</summary>
+					<p>La mayoría de nuestras clientas lo describen como una molestia leve. Usamos técnicas que minimizan cualquier incomodidad.</p>
+				</details>
+				<details>
+					<summary>¿Qué cuidados debo tener después?</summary>
+					<p>Te entregaremos un kit post-tratamiento y una guía detallada: evitar sol, piscinas y sudor excesivo durante los primeros 7 días.</p>
+				</details>
+			</div>
+		</section>
+
+		<section id="contacto" class="container contact-section">
+			<div class="contact-info">
+				<h2>Contacto</h2>
+				<p>Calle de la Belleza 45, 28001 Madrid</p>
+				<p>Tel/WhatsApp: <strong>+34 600 000 000</strong></p>
+				<div class="socials">
+					<a href="#">Instagram</a>
+					<a href="#">Facebook</a>
+				</div>
+			</div>
+			<div class="map-box">
+				<div class="map-placeholder">
+					<span>Ubicación en Google Maps</span>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p>&copy; 2026 SK MICROBROWS. Todos los derechos reservados.</p>
+	</footer>
 </Layout>
+
+<style>
+	/* Estilos específicos de la landing */
+	.container { max-width: 1100px; margin: 0 auto; padding: 5rem 1.5rem; }
+	
+	/* Header */
+	.header { background: rgba(252, 250, 248, 0.9); backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid #eee; }
+	.nav { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 1.5rem; }
+	.logo { font-family: 'Playfair Display', serif; font-weight: 700; text-decoration: none; color: #1a1a1a; letter-spacing: -1px; font-size: 1.4rem; }
+	.links { display: flex; gap: 2rem; align-items: center; }
+	.links a { text-decoration: none; color: #444; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
+	.links a:hover { color: var(--accent); }
+	.btn-cta { background: var(--text); color: white !important; padding: 0.6rem 1.2rem; border-radius: 50px; }
+
+	/* Hero */
+	.hero { height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(252,250,248,0.7), rgba(252,250,248,0.7)), url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80'); background-size: cover; background-position: center; padding: 0 1.5rem; }
+	.hero-content h1 { font-size: 4rem; margin: 1rem 0; line-height: 1.1; }
+	.subtitle { text-transform: uppercase; letter-spacing: 3px; font-size: 0.8rem; color: var(--accent); font-weight: 600; }
+	.hero-btns { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; }
+	.btn-primary { background: var(--text); color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; }
+	.btn-secondary { border: 1px solid var(--text); color: var(--text); padding: 1rem 2rem; border-radius: 50px; text-decoration: none; }
+
+	/* Services */
+	.section-title { text-align: center; margin-bottom: 3rem; font-size: 2.5rem; }
+	.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+	.service-card { background: white; padding: 3rem 2rem; border-radius: 20px; text-align: center; border: 1px solid #f0f0f0; transition: transform 0.3s; }
+	.service-card:hover { transform: translateY(-10px); }
+	.img-placeholder { font-size: 3rem; margin-bottom: 1.5rem; }
+
+	/* About */
+	.about-section { background: #f4f1ee; }
+	.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+	.about-image img { width: 100%; border-radius: 30px; filter: grayscale(20%); }
+
+	/* FAQ */
+	.faq-list { max-width: 700px; margin: 0 auto; }
+	details { background: white; margin-bottom: 1rem; border-radius: 15px; border: 1px solid #eee; transition: all 0.3s; }
+	summary { padding: 1.5rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; }
+	summary::after { content: '→'; color: var(--accent); transition: 0.3s; }
+	details[open] summary::after { transform: rotate(90deg); }
+	details p { padding: 0 1.5rem 1.5rem; color: #666; margin: 0; }
+
+	/* Contact */
+	.contact-section { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+	.map-placeholder { background: #e5e5e5; height: 350px; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: #888; }
+	.socials { margin-top: 1.5rem; display: flex; gap: 1.5rem; }
+	.socials a { color: var(--text); font-weight: 600; }
+
+	/* Footer */
+	.footer { text-align: center; padding: 3rem; border-top: 1px solid #eee; font-size: 0.8rem; color: #888; }
+
+	@media (max-width: 768px) {
+		.hero-content h1 { font-size: 2.5rem; }
+		.about-grid, .contact-section { grid-template-columns: 1fr; }
+		.links { display: none; }
+	}
+</style>
