@@ -1,44 +1,34 @@
 ---
 import { ClientRouter } from 'astro:transitions';
-
-interface Props {
-	title: string;
-}
-
+interface Props { title: string; }
 const { title } = Astro.props;
 ---
-
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="SK Microbrows - Estética Avanzada" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{title}</title>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-		<ClientRouter />
-	</head>
-	<body>
-		<slot />
-		<style is:global>
-			:root {
-				--accent: #b59a7d; /* Dorado suave */
-				--text: #2d2a26;
-				--bg: #fcfaf8;
-			}
-			html {
-				font-family: 'Inter', sans-serif;
-				background: var(--bg);
-				color: var(--text);
-				scroll-behavior: smooth;
-			}
-			h1, h2, h3 {
-				font-family: 'Playfair Display', serif;
-				font-weight: 700;
-			}
-			body { margin: 0; padding: 0; }
-			section { scroll-margin-top: 80px; }
-		</style>
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{title}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+        <ClientRouter />
+    </head>
+    <body>
+        <slot />
+        <style is:global>
+            :root { --accent: #b59a7d; --text: #2d2a26; --bg: #fcfaf8; }
+            html { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); scroll-behavior: smooth; }
+            
+            /* Animación de revelado */
+            @keyframes revealUp {
+                from { opacity: 0; transform: translateY(30px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+            .reveal { opacity: 0; }
+            .reveal.active { animation: revealUp 1s ease-out forwards; }
+            
+            h1, h2, h3, .logo { font-family: 'Playfair Display', serif; }
+            body { margin: 0; padding: 0; }
+        </style>
+    </body>
 </html>

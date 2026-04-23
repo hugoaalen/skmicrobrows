@@ -3,159 +3,352 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="SK Microbrows | Mirada y Estética">
-	<header class="header">
-		<nav class="nav">
-			<a href="/" class="logo">SK MICROBROWS</a>
-			<div class="links">
-				<a href="#servicios">Servicios</a>
-				<a href="#sobre-mi">Sobre mí</a>
-				<a href="#faq">FAQ</a>
-				<a href="#contacto" class="btn-cta">Cita</a>
-			</div>
-		</nav>
-	</header>
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="logo">SK MICROBROWS</a>
+            <div class="links">
+                <a href="#servicios">Servicios</a>
+                <a href="#resultados">Resultados</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacto" class="btn-cta">Cita</a>
+            </div>
+        </nav>
+    </header>
 
-	<main>
-		<section class="hero">
-			<div class="hero-content">
-				<span class="subtitle">Especialista en Micropigmentación</span>
-				<h1>Realzamos tu esencia natural</h1>
-				<p>Técnicas hiperrealistas diseñadas exclusivamente para tu rostro.</p>
-				<div class="hero-btns">
-					<a href="#servicios" class="btn-primary">Ver tratamientos</a>
-					<a href="#contacto" class="btn-secondary">Dónde estamos</a>
-				</div>
-			</div>
-		</section>
+    <main>
+        <section class="hero-scroll-wrapper">
+            <div class="sticky-container">
+                <div class="hero-content-under" id="hero-text-under">
+                    <span class="subtitle">Especialista en Micropigmentación</span>
+                    <h1>Realzamos tu esencia natural</h1>
+                    <p>Técnicas hiperrealistas diseñadas exclusivamente para tu rostro.</p>
+                    <div class="hero-btns">
+                        <a href="#servicios" class="btn-primary">Ver tratamientos</a>
+                        <a href="#contacto" class="btn-secondary">Pedir Cita</a>
+                    </div>
+                </div>
 
-		<section id="servicios" class="container">
-			<h2 class="section-title">Servicios</h2>
-			<div class="services-grid">
-				<div class="service-card">
-					<div class="img-placeholder">👁️</div>
-					<h3>Microblading</h3>
-					<p>Diseño pelo a pelo para cejas con falta de densidad o forma.</p>
-				</div>
-				<div class="service-card">
-					<div class="img-placeholder">✨</div>
-					<h3>Efecto Polvo</h3>
-					<p>Sombreado suave para un aspecto de maquillaje natural y elegante.</p>
-				</div>
-				<div class="service-card">
-					<div class="img-placeholder">🤍</div>
-					<h3>Areola Clínica</h3>
-					<p>Reconstrucción estética y oncológica con acabados 3D.</p>
-				</div>
-			</div>
-		</section>
+                <div class="split-side left" id="hero-left">
+                    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1000" alt="Saskia">
+                    <div class="vertical-text v-left">MICROPIGMENTACIÓN<br>HIPERREALISTA</div>
+                    <div class="social-handle">@SK_MICROBROWS</div>
+                </div>
 
-		<section id="sobre-mi" class="about-section">
-			<div class="container about-grid">
-				<div class="about-image">
-					<img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&q=80" alt="Profesional">
-				</div>
-				<div class="about-text">
-					<h2>Pasión por el detalle</h2>
-					<p>Soy [Nombre], especialista titulada en estética avanzada. Mi enfoque no es transformar tu rostro, sino devolverle la armonía que el tiempo o las circunstancias han diluido.</p>
-					<p>Utilizo los mejores pigmentos del mercado y las técnicas más vanguardistas para asegurar que el resultado sea, ante todo, invisible al ojo inexperto.</p>
-				</div>
-			</div>
-		</section>
+                <div class="split-side right" id="hero-right">
+                    <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=1000" alt="Saskia Fdez">
+                    <div class="vertical-text v-right">SASKIA<br>FDEZ</div>
+                </div>
+            </div>
+        </section>
 
-		<section id="faq" class="container">
-			<h2 class="section-title">Preguntas Frecuentes</h2>
-			<div class="faq-list">
-				<details>
-					<summary>¿Cuánto tiempo dura el tratamiento?</summary>
-					<p>Dependiendo de tu tipo de piel, entre 12 y 18 meses. Recomendamos un retoque anual para mantener el color perfecto.</p>
-				</details>
-				<details>
-					<summary>¿Es un proceso doloroso?</summary>
-					<p>La mayoría de nuestras clientas lo describen como una molestia leve. Usamos técnicas que minimizan cualquier incomodidad.</p>
-				</details>
-				<details>
-					<summary>¿Qué cuidados debo tener después?</summary>
-					<p>Te entregaremos un kit post-tratamiento y una guía detallada: evitar sol, piscinas y sudor excesivo durante los primeros 7 días.</p>
-				</details>
-			</div>
-		</section>
+        <section id="servicios" class="container reveal-section">
+            <h2 class="section-title reveal-child">Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card reveal-child">
+                    <div class="img-placeholder">👁️</div>
+                    <h3>Microblading</h3>
+                    <p>Diseño pelo a pelo para cejas con falta de densidad o forma.</p>
+                </div>
+                <div class="service-card reveal-child">
+                    <div class="img-placeholder">✨</div>
+                    <h3>Efecto Polvo</h3>
+                    <p>Sombreado suave para un aspecto de maquillaje natural y elegante.</p>
+                </div>
+                <div class="service-card reveal-child">
+                    <div class="img-placeholder">🤍</div>
+                    <h3>Areola Clínica</h3>
+                    <p>Reconstrucción estética y oncológica con acabados 3D.</p>
+                </div>
+            </div>
+        </section>
 
-		<section id="contacto" class="container contact-section">
-			<div class="contact-info">
-				<h2>Contacto</h2>
-				<p>Calle de la Belleza 45, 28001 Madrid</p>
-				<p>Tel/WhatsApp: <strong>+34 600 000 000</strong></p>
-				<div class="socials">
-					<a href="#">Instagram</a>
-					<a href="#">Facebook</a>
-				</div>
-			</div>
-			<div class="map-box">
-				<div class="map-placeholder">
-					<span>Ubicación en Google Maps</span>
-				</div>
-			</div>
-		</section>
-	</main>
+        <section id="resultados" class="container reveal-section">
+            <h2 class="section-title reveal-child">Resultados Reales</h2>
+            <div class="comparison-slider reveal-child">
+                <div class="before">
+                    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=1000" alt="Antes" />
+                </div>
+                <div class="after" id="after-img">
+                    <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=1000" alt="Después" />
+                </div>
+                <input type="range" min="0" max="100" value="50" class="slider-input" id="compare-slider" />
+                <div class="slider-line"></div>
+            </div>
+        </section>
 
-	<footer class="footer">
-		<p>&copy; 2026 SK MICROBROWS. Todos los derechos reservados.</p>
-	</footer>
+        <section id="sobre-mi" class="about-section reveal-section">
+            <div class="container about-grid">
+                <div class="about-image reveal-child">
+                    <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&q=80" alt="Profesional" transition:name="avatar">
+                </div>
+                <div class="about-text reveal-child">
+                    <h2>Pasión por el detalle</h2>
+                    <p>Soy Saskia Fernández y me dedico a la micropigmentación avanzada e hiperrealista de cejas desde hace algo más de ocho años. Durante este tiempo he desarrollado un estilo muy personal, centrado en resaltar los rasgos naturales de cada persona. Hacer que te sientas mejor contigo mismo/a es mi objetivo.
+
+Además de la técnica, doy mucha importancia al trato cercano y a que cada persona entienda bien el proceso antes de empezar. No creo en soluciones genéricas: cada piel, cada rostro y cada historia requieren un enfoque diferente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="container reveal-section">
+            <h2 class="section-title reveal-child">Preguntas Frecuentes</h2>
+            <div class="faq-list reveal-child">
+                <details>
+                    <summary>¿Cuánto tiempo dura el tratamiento?</summary>
+                    <p>Dependiendo de tu tipo de piel, entre 12 y 18 meses. Recomendamos un retoque anual para mantener el color perfecto.</p>
+                </details>
+                <details>
+                    <summary>¿Es un proceso doloroso?</summary>
+                    <p>La mayoría de nuestras clientas lo describen como una molestia leve. Usamos técnicas que minimizan cualquier incomodidad.</p>
+                </details>
+                <details>
+                    <summary>¿Qué cuidados debo tener después?</summary>
+                    <p>Te entregaremos un kit post-tratamiento y una guía detallada: evitar sol, piscinas y sudor excesivo durante los primeros 7 días.</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="contacto" class="container contact-section reveal-section">
+            <div class="contact-info reveal-child">
+                <h2>Contacto</h2>
+                <p>Calle de la Belleza 45, 28001 Madrid</p>
+                <p>Tel/WhatsApp: <strong>+34 600 000 000</strong></p>
+                
+                <div class="socials-v2">
+                    <a href="https://wa.me/34600000000" class="social-btn whatsapp" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.7 8.38 8.38 0 0 1 3.8.9L21 3z"></path></svg>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://instagram.com/skmicrobrows" class="social-btn instagram" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+            <div class="map-box reveal-child">
+                <div class="map-placeholder">
+                    <div class="map-mockup-icon">📍</div>
+                    <span>Ubicación en Google Maps</span>
+                    <small>Madrid, España</small>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 SK MICROBROWS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const initWeb = () => {
+            const wrapper = document.querySelector('.hero-scroll-wrapper');
+            const leftSide = document.getElementById('hero-left');
+            const rightSide = document.getElementById('hero-right');
+            const underText = document.getElementById('hero-text-under');
+
+            const handleScroll = () => {
+                if (!wrapper || !leftSide || !rightSide || !underText) return;
+                const rect = wrapper.getBoundingClientRect();
+                let scrollPercent = -rect.top / (rect.height - window.innerHeight);
+                scrollPercent = Math.max(0, Math.min(1, scrollPercent));
+
+                leftSide.style.transform = `translateX(-${scrollPercent * 105}%)`;
+                rightSide.style.transform = `translateX(${scrollPercent * 105}%)`;
+
+                if (scrollPercent > 0.35) {
+                    const textOpacity = (scrollPercent - 0.35) * 2.5;
+                    underText.style.opacity = Math.min(1, textOpacity).toString();
+                    underText.style.transform = `translateY(${(1 - Math.min(1, textOpacity)) * 30}px)`;
+                } else {
+                    underText.style.opacity = "0";
+                }
+            };
+
+            window.addEventListener('scroll', handleScroll);
+
+            const slider = document.getElementById('compare-slider');
+            const afterImg = document.getElementById('after-img');
+            if(slider && afterImg) {
+                slider.addEventListener('input', (e) => {
+                    afterImg.style.width = (e.target as HTMLInputElement).value + '%';
+                });
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        entry.target.querySelectorAll('.reveal-child').forEach((child, i) => {
+                            (child as HTMLElement).style.transitionDelay = `${i * 0.1}s`;
+                            child.classList.add('active');
+                        });
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal-section').forEach(el => observer.observe(el));
+        };
+
+        document.addEventListener('astro:page-load', initWeb);
+    </script>
 </Layout>
 
 <style>
-	/* Estilos específicos de la landing */
-	.container { max-width: 1100px; margin: 0 auto; padding: 5rem 1.5rem; }
-	
-	/* Header */
-	.header { background: rgba(252, 250, 248, 0.9); backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid #eee; }
-	.nav { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 1.5rem; }
-	.logo { font-family: 'Playfair Display', serif; font-weight: 700; text-decoration: none; color: #1a1a1a; letter-spacing: -1px; font-size: 1.4rem; }
-	.links { display: flex; gap: 2rem; align-items: center; }
-	.links a { text-decoration: none; color: #444; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
-	.links a:hover { color: var(--accent); }
-	.btn-cta { background: var(--text); color: white !important; padding: 0.6rem 1.2rem; border-radius: 50px; }
+    :root { 
+        --apple-ease: cubic-bezier(0.16, 1, 0.3, 1);
+        --snappy-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+        --nude: #e6d5c7;
+        --accent: #b59a7d;
+    }
 
-	/* Hero */
-	.hero { height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(rgba(252,250,248,0.7), rgba(252,250,248,0.7)), url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&q=80'); background-size: cover; background-position: center; padding: 0 1.5rem; }
-	.hero-content h1 { font-size: 4rem; margin: 1rem 0; line-height: 1.1; }
-	.subtitle { text-transform: uppercase; letter-spacing: 3px; font-size: 0.8rem; color: var(--accent); font-weight: 600; }
-	.hero-btns { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; }
-	.btn-primary { background: var(--text); color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; }
-	.btn-secondary { border: 1px solid var(--text); color: var(--text); padding: 1rem 2rem; border-radius: 50px; text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 6rem 1.5rem; }
+    
+    .header { background: rgba(252, 250, 248, 0.85); backdrop-filter: blur(20px); position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .nav { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 1.5rem; }
+    .logo { font-weight: 700; text-decoration: none; color: #1a1a1a; font-size: 1.4rem; font-family: 'Playfair Display', serif; }
+    .links { display: flex; gap: 2rem; align-items: center; }
+    .links a { text-decoration: none; color: #444; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; }
+    .btn-cta { background: #1a1a1a; color: white !important; padding: 0.6rem 1.5rem; border-radius: 50px; }
 
-	/* Services */
-	.section-title { text-align: center; margin-bottom: 3rem; font-size: 2.5rem; }
-	.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-	.service-card { background: white; padding: 3rem 2rem; border-radius: 20px; text-align: center; border: 1px solid #f0f0f0; transition: transform 0.3s; }
-	.service-card:hover { transform: translateY(-10px); }
-	.img-placeholder { font-size: 3rem; margin-bottom: 1.5rem; }
+    /* Hero */
+    .hero-scroll-wrapper { height: 220vh; position: relative; background-color: #fcfaf8; }
+    .sticky-container { position: sticky; top: 0; height: 100vh; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: var(--nude); }
+    .hero-content-under { position: absolute; text-align: center; z-index: 1; opacity: 0; max-width: 800px; padding: 2rem; }
+    .hero-content-under h1 { font-size: 4rem; margin: 1rem 0; font-family: 'Playfair Display', serif; }
+    .hero-btns { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; }
+    .btn-primary { background: #1a1a1a; color: white; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; display: inline-block; }
+    .btn-secondary { border: 1px solid #1a1a1a; color: #1a1a1a; padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none; display: inline-block; }
 
-	/* About */
-	.about-section { background: #f4f1ee; }
-	.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-	.about-image img { width: 100%; border-radius: 30px; filter: grayscale(20%); }
+    .split-side { position: absolute; top: 0; width: 50.2%; height: 100%; z-index: 5; overflow: hidden; }
+    .split-side.left { left: 0; }
+    .split-side.right { right: 0; }
+    .split-side img { width: 100vw; height: 100vh; object-fit: cover; }
+    .split-side.right img { margin-left: -50vw; }
 
-	/* FAQ */
-	.faq-list { max-width: 700px; margin: 0 auto; }
-	details { background: white; margin-bottom: 1rem; border-radius: 15px; border: 1px solid #eee; transition: all 0.3s; }
-	summary { padding: 1.5rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; }
-	summary::after { content: '→'; color: var(--accent); transition: 0.3s; }
-	details[open] summary::after { transform: rotate(90deg); }
-	details p { padding: 0 1.5rem 1.5rem; color: #666; margin: 0; }
+    .vertical-text { position: absolute; font-family: 'Playfair Display', serif; font-weight: 700; color: rgba(45, 42, 38, 0.6); pointer-events: none; }
+    .v-left { left: 10%; top: 50%; transform: translateY(-50%) rotate(-90deg); font-size: 2.5vw; letter-spacing: 2px; }
+    .v-right { right: 5%; top: 50%; transform: translateY(-50%); font-size: 8vw; writing-mode: vertical-rl; color: #2d2a26; }
+    .social-handle { position: absolute; bottom: 10%; left: 5%; font-weight: 600; letter-spacing: 2px; font-size: 0.9rem; }
 
-	/* Contact */
-	.contact-section { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-	.map-placeholder { background: #e5e5e5; height: 350px; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: #888; }
-	.socials { margin-top: 1.5rem; display: flex; gap: 1.5rem; }
-	.socials a { color: var(--text); font-weight: 600; }
+    /* Reveal System */
+    .reveal-child { opacity: 0; transform: translateY(30px); transition: all 1s var(--apple-ease); }
+    .reveal-child.active { opacity: 1; transform: translateY(0); }
 
-	/* Footer */
-	.footer { text-align: center; padding: 3rem; border-top: 1px solid #eee; font-size: 0.8rem; color: #888; }
+    /* Servicios (HOVER CORREGIDO: SNAPPY) */
+    .section-title { text-align: center; margin-bottom: 4rem; font-size: 3rem; font-family: 'Playfair Display', serif; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    .service-card { 
+        background: white; 
+        padding: 4rem 2rem; 
+        border-radius: 30px; 
+        text-align: center; 
+        border: 1px solid #f0f0f0; 
+        transition: transform 0.3s var(--snappy-ease), border-color 0.3s var(--snappy-ease), box-shadow 0.3s var(--snappy-ease);
+    }
+    .service-card:hover { 
+        transform: translateY(-12px); 
+        border-color: var(--accent); 
+        box-shadow: 0 15px 30px rgba(181, 154, 125, 0.15); 
+    }
+    .img-placeholder { font-size: 3rem; margin-bottom: 1.5rem; }
 
-	@media (max-width: 768px) {
-		.hero-content h1 { font-size: 2.5rem; }
-		.about-grid, .contact-section { grid-template-columns: 1fr; }
-		.links { display: none; }
-	}
+    /* Slider */
+    .comparison-slider { position: relative; width: 100%; height: 500px; border-radius: 30px; overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,0.15); }
+    .comparison-slider img { width: 100%; height: 500px; object-fit: cover; position: absolute; }
+    .after { position: absolute; top: 0; left: 0; width: 50%; height: 100%; overflow: hidden; z-index: 2; border-right: 3px solid white; }
+    .slider-input { position: absolute; -webkit-appearance: none; appearance: none; width: 100%; height: 100%; background: transparent; z-index: 10; cursor: ew-resize; top: 0; margin: 0; }
+
+    /* Contacto & Socials */
+    .contact-section { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .socials-v2 { display: flex; flex-direction: row; gap: 0.8rem; margin-top: 1.5rem; }
+    .social-btn { display: flex; align-items: center; gap: 8px; padding: 0.7rem 1.2rem; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.85rem; transition: 0.3s var(--snappy-ease); }
+    .whatsapp { background: #25D366; color: white; }
+    .instagram { background: #1a1a1a; color: white; }
+    .social-btn:hover { transform: translateY(-3px); filter: brightness(1.1); }
+
+    /* Mapa Placeholder */
+    .map-placeholder { background: #f0ece9; border: 2px dashed rgba(181, 154, 125, 0.3); height: 350px; border-radius: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #8c857e; text-align: center; }
+    .map-mockup-icon { font-size: 2.5rem; opacity: 0.5; }
+
+    .about-section { background: #f4f1ee; border-radius: 50px; margin: 0 1rem; }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .about-image img { width: 100%; border-radius: 40px; }
+
+    .footer { text-align: center; padding: 5rem 1rem; color: #aaa; font-size: 0.8rem; letter-spacing: 2px; }
+
+	/* CONTENEDOR DE LAS PREGUNTAS */
+    .faq-list { 
+        max-width: 800px; 
+        margin: 0 auto; 
+    }
+
+    details { 
+        background: white; 
+        margin-bottom: 1.5rem; 
+        border-radius: 24px; 
+        border: 1px solid rgba(0,0,0,0.05); 
+        transition: all 0.3s var(--snappy-ease);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    }
+
+    details[open] {
+        box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+        transform: scale(1.02);
+    }
+
+    /* EL TITULO (BOTÓN) */
+    summary { 
+        padding: 1.8rem; 
+        font-weight: 700; 
+        cursor: pointer; 
+        list-style: none; /* Esconde la flecha en Chrome/Firefox */
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+        font-size: 1.1rem;
+        color: #1a1a1a;
+    }
+
+    /* Esconde la flecha en Safari */
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /* AÑADIMOS NUESTRO PROPIO ICONO (+) */
+    summary::after {
+        content: '+';
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 1.8rem;
+        color: var(--accent);
+        transition: transform 0.4s var(--apple-ease);
+    }
+
+    details[open] summary::after {
+        transform: rotate(45deg); /* Se convierte en una 'x' */
+    }
+
+    /* EL TEXTO DE LA RESPUESTA */
+    details p { 
+        padding: 0 1.8rem 2rem; 
+        color: #666; 
+        line-height: 1.6;
+        margin: 0;
+        font-size: 1rem;
+        /* Animación de entrada para el texto */
+        animation: slideDown 0.4s var(--apple-ease);
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 768px) {
+        .hero-content-under h1 { font-size: 2.5rem; }
+        .hero-btns { flex-direction: column; align-items: center; }
+        .about-grid, .contact-section { grid-template-columns: 1fr; }
+        .socials-v2 { justify-content: center; }
+        .links { display: none; }
+    }
 </style>
